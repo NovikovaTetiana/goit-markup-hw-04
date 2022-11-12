@@ -120,7 +120,7 @@ body {
 }
 
 .header-icon {
-    fill: var(--secondary-color-text);
+    fill: currentColor;
 }
 
 .header-icon:hover,
@@ -145,6 +145,7 @@ body {
 .header-list-link:focus {
     color: var(--accent-color);
 }
+
 
 /* __________HERO___________ */
 .hero {
