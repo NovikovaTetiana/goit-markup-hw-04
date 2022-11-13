@@ -117,10 +117,11 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    color: var(--secondary-color-text);
 }
 
 .header-icon {
-    fill: var(--secondary-color-text);
+    fill: currentColor;
 }
 
 .header-icon:hover,
@@ -317,6 +318,41 @@ body {
     display: flex;
 }
 
+.team-social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.team-list-item {
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.team-list-item:hover,
+.team-list-item:focus {
+    background-color: var(--accent-color);
+}
+
+.team-list-item:hover .team-icon,
+.team-list-item:focus .team-icon {
+    fill: #ffffff;
+}
+
+.team-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-icon {
+    fill: #afb1b8;
+}
+
 .team-item+.team-item {
     margin-left: 30px;
 
@@ -344,6 +380,7 @@ body {
 }
 
 .team-text {
+    margin-bottom: 16px;
 
     font-size: 16px;
     line-height: calc(19 / 16);
@@ -351,6 +388,59 @@ body {
     min-width: 130px;
     letter-spacing: 0.03em;
     color: var(--secondary-color-text);
+
+}
+
+/* __________CLIENT___________ */
+
+.client {
+    display: flex;
+    padding: 94px 0;
+}
+
+.client-title {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text)
+}
+
+.client-list {
+    display: flex;
+    gap: 30px;
+}
+
+.client-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+}
+
+.client-link {
+    color: var(--secondary-color-text);
+}
+
+.client-item:hover,
+.client-item:focus {
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+}
+
+.client-icon {
+    fill: currentColor;
+}
+
+.client-item:hover .client-icon,
+.client-item:focus .client-icon {
+    fill: var(--accent-color);
 }
 
 /* __________FOOTER___________ */
